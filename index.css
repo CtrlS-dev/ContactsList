@@ -91,6 +91,8 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 #titulo{
@@ -103,11 +105,10 @@ body{
 
 #main-container{
     min-height: 12.2rem;
-    max-height: 25rem;
+    max-height: 29rem;
     /* animation: expandContainer 2s ease 1 forwards;
     animation-fill-mode: both; */
-    overflow-y: auto;
-    overflow-x: hidden;
+    
     width: 19rem;
     margin: 0 auto;
     gap: 2rem;
@@ -141,7 +142,7 @@ body{
   /* justify-content: space-evenly; */
   align-items: center; 
   /* gap: 2.6rem; */
-  margin: 2rem 0.8rem 2rem 0.8rem;
+  margin: 0.6rem 0.8rem 1rem 0.8rem;
   /* position: fixed; */
   /* background-color: red; */
   /*position: fixed; */
@@ -162,7 +163,6 @@ body{
 } */
 
 
-
 .icon1{
   /* padding: 0.25rem; */
   width: 1.8rem;
@@ -170,6 +170,7 @@ body{
   /* position: absolute; */
   margin: 0.1rem 0.2rem 0 0;
 }
+
 
 
 .info {
@@ -224,11 +225,15 @@ body{
   flex-direction: column;
   flex-wrap: wrap;
   align-content: space-around; */
+  min-height: auto;
+  max-height:12rem;
+  overflow-y: auto;
+  overflow-x: hidden;
   background-color: rgb(240, 238, 238);
 }
 
 .contact{
-  display: flex;
+   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -294,18 +299,20 @@ p:focus{
   outline: none;
 }
 
+
 .bad{
   padding: 0.4rem;
   border-radius: 4px;
   background-color: #d82d2d8e;
-
 }
 
 .bad, .bad:focus {
     outline: 2px solid red;
+    width: 5rem;
 }
 
 .good{
+  width: 5rem;
   padding: 0.4rem;
   border-radius: 4px;
   background-color: #22c55e65;
@@ -316,6 +323,7 @@ p:focus{
 }
 
 .editing{
+  width: 5rem;
   padding: 0.4rem;
   border-radius: 4px;
   background-color: rgba(252, 249, 69, 0.425);
