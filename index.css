@@ -86,13 +86,12 @@ h1, p, body, button, li, ul{
 }
 
 body{
+  margin: 1rem;
+  padding: 1rem;
   background-color: white;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow-y: hidden;
-    overflow-x: hidden;
 }
 
 #titulo{
@@ -104,17 +103,18 @@ body{
 }
 
 #main-container{
+  overflow: hidden;
     min-height: 12.2rem;
-    max-height: 29rem;
+    /* max-height: 19rem; */
     /* animation: expandContainer 2s ease 1 forwards;
     animation-fill-mode: both; */
-    
-    width: 19rem;
-    margin: 0 auto;
+    margin: 0.4rem;
+    /* width: 100%; */
+    max-width: 620px;
     gap: 2rem;
     /* background-color: rgba(245, 245, 245, 0.219); */
     border: 2px solid rgba(158, 158, 158, 0.384);
-    border-radius: 0.4rem;
+    border-radius: 24px;
     -webkit-box-shadow: 0px 0px 9px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 9px -6px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 9px -6px rgba(0,0,0,0.75);
@@ -140,7 +140,7 @@ body{
   display: flex;
   flex-direction: column;
   /* justify-content: space-evenly; */
-  align-items: center; 
+  align-items: center;
   /* gap: 2.6rem; */
   margin: 0.6rem 0.8rem 1rem 0.8rem;
   /* position: fixed; */
@@ -226,7 +226,7 @@ body{
   flex-wrap: wrap;
   align-content: space-around; */
   min-height: auto;
-  max-height:12rem;
+  max-height: 17rem;
   overflow-y: auto;
   overflow-x: hidden;
   background-color: rgb(240, 238, 238);
@@ -245,6 +245,8 @@ body{
   border-bottom: 3px rgba(146, 146, 146, 0.233) solid;
   /*animation: extendContact 0.5s ease 1 forwards;
   animation-fill-mode: both;*/
+  text-align: right;
+  
 }
 
 .edit-icon{
@@ -261,7 +263,7 @@ body{
 }
 
 .edit-icon:hover{
-  background-color: #0d5b70;
+  background-color: #56acc4;
 }
 
 
@@ -292,6 +294,7 @@ body{
 
 
 p{
+  text-align: start;
   border: none;
   outline: none;
 }
@@ -340,6 +343,19 @@ p:focus{
   to {height: 4rem;}
 }*/
 
+@media(min-width: 440px){
+  .bad{
+    width: 12rem;
+  }
+  
+  .good{
+    width: 12rem;
+  }
+  
+  .editing{
+    width: 12rem;
+  }
+}
 @media (min-width: 768px){
   #titulo{
     font-size: 4rem;
@@ -347,7 +363,6 @@ p:focus{
   }
   #main-container{
     min-height: 12.2rem;
-    max-height: 27rem;
     width: 30rem;
     margin: 0 auto;
     gap: 2rem;
@@ -387,7 +402,7 @@ p:focus{
   }
   #main-container{
     min-height: 12.2rem;
-    max-height: 30rem;
+    /* max-height: 30rem; */
     width: 30rem;
 }
 ::-webkit-scrollbar{
@@ -404,6 +419,5 @@ p:focus{
   }
   #main-container{
     min-height: 12.2rem;
-    max-height: 70rem;
 }
 }
