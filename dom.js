@@ -1,6 +1,5 @@
 const NAME_REGEX = /^[A-Z][a-z]*[ ][A-Z][a-z ]*$/;
 const NUMBER_REGEX = /^[0](412|212|424|426|414|416)[0-9]{7}$/;
-
 const nameInput = document.querySelector('#input-name');
 const numberInput = document.querySelector('#input-number');
 const formBtn = document.querySelector('#form-btn');
