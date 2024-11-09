@@ -10,6 +10,8 @@ const list = document.querySelector('#list');
 let nameValidation = false;
 let numberValidation = false;
 
+
+
 // Functions
 const validateInput = (input, validation) => {
   const infoText = input.parentElement.children[2];
